@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quary</title>
+    <style>
+        .ticket_container{
+            border-radius: 1px solid black;
+            width:800px;
+            height:500px;
+            margin:5opx auto;
+            box-shadow: gray;
+            border-radius: 20px;
+            display:flex;
+            font-family:sans-serif;
+        }
+        .user{
+            background-color: rgb(231, 191, 118);
+            width:40%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 5px gray;
+            border:2px solid black;
+            padding-left:20px;
+
+        }
+        .event{
+            background-color: rgb(220, 185, 122);
+            width:60%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 5px gray;
+            border:2px solid black;
+            border-left:dashed;
+
+        }
+        .ticket_no{
+            font-family:monospace;
+
+        }
+        .title{
+            font-size:20px;
+            margin-left:none;
+        }
+        .img{
+            height:150px;
+
+        }
+        /*mobile*/
+        @media(max-width:6oopx){
+            .ticket_container{
+                flex-diraction:column;
+                align-item:center;
+                height:auto;
+                width:auto;
+
+            }
+            .user{
+                width:300px;
+                border-right: solid;
+
+            }
+            .event{
+                width:300px;
+                border-left: solid;
+                border-top: dashed;
+            }
+        }
+        /*tablet*/
+        @media(min-width:601px)and(max-width:800px){
+            .event{
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ticket_container">
+        <div class="user">
+            <span class="ticket_no">Ticket No:1234</span>
+            <p class="title">Event:College frashers party</p>
+            <img src="c:\Users\admin\Pictures\people.png" class="img" alt="student"/>
+
+        </div>
+        <div class="event">
+            <span class="ticket_no">Ticket No:5678</span>
+            <p class="title">Event:Collage Frashers Party</p>
+            <img src="c:\Users\admin\Pictures\people.png" class="img" alt="student"/>
+        </div>
+        </div>
+ 
+</body>
+</html>
